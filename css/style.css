@@ -8,7 +8,7 @@
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 ul, li {
@@ -73,14 +73,14 @@ header nav ul li {
 
 main {
     display: grid;
-    grid-template-rows: 636px 443px;
+    grid-template-rows: 636px 443px 636px;
 }
 
 /*HERO GENERAL CONFIG*/
 
 section#hero {
     background-color: #F79595;
-    background-image: url("../Images/BackgroundHero.png");
+    background-image: url("../Images/wavesAndBackgrounds/BackgroundHero.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,8 +179,14 @@ section#aboutUs {
 
 /*---ABOUT US IMAGE*/
 
-section#aboutUs div.image img {
+section#aboutUs div.image img.principal {
     margin-left: 52px;
+}
+
+section#aboutUs div.image img.strawberry {
+    position: absolute;
+    right: -90px;
+    top: 895px;
 }
 
 /*---ABOUT US TEXT*/
@@ -209,4 +215,180 @@ section#aboutUs .text p {
     margin-top: 10px;
     line-height: 1.6;
     width: 560px;
+}
+
+/*TOP MENU CONFIG*/
+
+section#topMenu {
+    background-color: #F79595;
+    background-image: url("../Images/wavesAndBackgrounds/BackgroundTopMenu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---TOP MENU TEXT*/
+
+section#topMenu div.text {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+section#topMenu h1.subtitleGreenWhite {
+    padding-left: 30px;
+}
+
+.subtitleGreenWhite {
+    color: #40B36C;
+    text-shadow: 3px 3px#ffffff;
+    font-size: 2.5rem;
+    width: 80px;
+}
+
+.subtitleWhiteAmarillo {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: Amarillo;
+    width: 130px;
+    margin-top: -30px;
+}
+
+/*---CARDS*/
+
+#gridCards {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
+    grid-column-gap: 35px;
+    margin-top: 100px;
+    margin-right: 35px;
+}
+
+/*------MAIN CARD*/
+
+section#topMenu div.mainCard {
+    grid-row: 1;
+    grid-column: 2;
+    height: 440px;
+    width: 240px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-left: -5px;
+}
+
+section#topMenu div.titleAndStars {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section#topMenu p {
+    margin-bottom: 10px;
+}
+
+section#topMenu div.price {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+section#topMenu div.price h3 {
+    color: #40B36C;
+    text-shadow: 2px 2.5px#101010;
+    font-size: 1.5rem;
+    padding-top: 6px;
+}
+
+section#topMenu div.price h2 {
+    color: #40B36C;
+    text-shadow: 2px 2.5px#101010;
+    font-size: 2.5rem;
+}
+
+.buttonGreenCard {
+    color: #ffffff;
+    background-color: #40B36C;
+    border: none;
+    padding: 10px 10px;
+    margin: 0px 10px 0px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttonWhiteCard {
+    color: #40B36C;
+    background-color: #ffffff;
+    border: 2px solid #40B36C;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*------RIGHT CARD*/
+
+section#topMenu div.rightCard {
+    grid-row: 1;
+    grid-column: 1;
+    height: 360px;
+    width: 240px;
+    background-color: #40B36C;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+section#topMenu div.rightCard div.titleAndStars {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section#topMenu div.rightCard div.titleAndStars h2 {
+    color: #ffffff;
+}
+
+section#topMenu div.rightCard p {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/*------LEFT CARD*/
+
+section#topMenu div.leftCard {
+    grid-row: 1;
+    grid-column: 3;
+    height: 360px;
+    width: 240px;
+    background-color: #40B36C;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+section#topMenu div.leftCard div.titleAndStars {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section#topMenu div.leftCard div.titleAndStars h2 {
+    color: #ffffff;
+}
+
+section#topMenu div.leftCard p {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/*---SEE MORE BUTTON*/
+
+section#topMenu button.buttonWhiteTitle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 220px;
 }
