@@ -8,6 +8,7 @@
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 ul, li {
@@ -70,3 +71,97 @@ header nav ul li {
 
 /*HERO GRID*/
 
+/*---HERO GENERAL CONFIG*/
+
+main {
+    height: 636px;
+    background-color: #F79595;
+    background-image: url("../Images/BackgroundHero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---HERO TEXT CONFIG*/
+
+main div.text {
+    display: inline-block;
+    margin-top: 120px;
+    margin-left: 220px;
+}
+
+.titleGreenWhite {
+    color: #40B36C;
+    text-shadow: 3px 3px#ffffff;
+    font-size: 4rem;
+    width: 360px;
+}
+
+.titleWhiteAmarillo {
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: Amarillo;
+    margin-top: -45px;
+    width: 380px;
+}
+
+.text p {
+    color: #ffffff;
+    margin-top: -22px;
+    width: 360px;
+}
+
+.buttonGreenTitle {
+    color: #ffffff;
+    background-color: #40B36C;
+    border: none;
+    padding: 10px 45px;
+    margin: 10px 10px 0px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.buttonWhiteTitle {
+    color: #40B36C;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 45px;
+    margin: 10px 10px 0px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/*---HERO IMAGE CONFIG*/
+
+main div#hero div.image img.mainImage {
+    position: absolute;
+    right: 0;
+    top: 65px;
+}
+
+main div#hero div.image img.blurBroculi {
+    height: 439px;
+    width: 435px;
+    position: absolute;
+    right: -90px;
+    top: 65px;
+}
+
+main div#hero div.image img.normalBroculi {
+    height: 209px;
+    width: 205px;
+    position: absolute;
+    right: -20px;
+    top: 395px;
+}
+
+main div#hero div.image img.alface {
+    height: 369px;
+    width: 600px;
+    position: absolute;
+    left: -190px;
+}
