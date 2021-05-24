@@ -73,7 +73,7 @@ header nav ul li {
 
 main {
     display: grid;
-    grid-template-rows: 636px 443px 680px 443px;
+    grid-template-rows: 636px 443px 680px 443px 680px;
 }
 
 /*HERO GENERAL CONFIG*/
@@ -141,13 +141,13 @@ section#hero .text p {
 
 /*---HERO IMAGE CONFIG*/
 
-main section#hero div.image img.mainImage {
+section#hero div.image img.mainImage {
     position: absolute;
     right: 0;
     top: 65px;
 }
 
-main section#hero div.image img.blurBroculi {
+section#hero div.image img.blurBroculi {
     height: 439px;
     width: 435px;
     position: absolute;
@@ -155,7 +155,7 @@ main section#hero div.image img.blurBroculi {
     top: 65px;
 }
 
-main section#hero div.image img.normalBroculi {
+section#hero div.image img.normalBroculi {
     height: 209px;
     width: 205px;
     position: absolute;
@@ -163,7 +163,7 @@ main section#hero div.image img.normalBroculi {
     top: 395px;
 }
 
-main section#hero div.image img.alface {
+section#hero div.image img.alface {
     height: 369px;
     width: 600px;
     position: absolute;
@@ -360,7 +360,7 @@ section#topMenu div.rightCard p {
     color: #ffffff;
 }
 
-/*VOID RIGHT CARD*/
+/*------VOID RIGHT CARD*/
 
 section#topMenu div.voidRightCard {
     grid-row: 1;
@@ -373,7 +373,7 @@ section#topMenu div.voidRightCard {
     justify-self: left;
 }
 
-/*RIGHT ARROW*/
+/*------RIGHT ARROW*/
 
 section#topMenu div.rightArrow {
     grid-row: 1;
@@ -409,7 +409,7 @@ section#topMenu div.leftCard p {
     color: #ffffff;
 }
 
-/*VOID LEFT CARD*/
+/*------VOID LEFT CARD*/
 
 section#topMenu div.voidLeftCard {
     grid-row: 1;
@@ -422,7 +422,7 @@ section#topMenu div.voidLeftCard {
     justify-self: right;
 }
 
-/*LEFT ARROW*/
+/*------LEFT ARROW*/
 
 section#topMenu div.leftArrow {
     grid-row: 1;
@@ -430,7 +430,7 @@ section#topMenu div.leftArrow {
     align-self: center;
 }
 
-/*---SEE MORE BUTTON*/
+/*------SEE MORE BUTTON*/
 
 section#topMenu div#seeMoreButton{
     display: flex;
@@ -441,3 +441,72 @@ section#topMenu div#seeMoreButton{
 section#topMenu div button.buttonWhiteTitle  {
     width: 220px;
 }
+
+/*NEW APP*/
+
+section#newApp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+/*---NEWAPP TEXT*/
+
+section#newApp div.text {
+    text-align: right;
+}
+
+section#newApp div.text h1.titleBlackAmarillo {
+    margin-left: auto;
+}
+
+section#newApp div.text h1.titleGreenBlack {
+    font-size: 4rem;
+    width: 271px;
+    margin-left: auto;
+}
+
+section#newApp div.text p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 52px;
+    line-height: 1.6;
+}
+
+section#newApp div.text img.getInStore {
+    width: 165px;
+    height: 48.95px;
+}
+
+/*---NEWAPP IMAGE*/
+
+section#newApp div.image {
+    display: flex;
+    justify-content: center;
+}
+
+section#newApp div.image img {
+    position: absolute;
+    top: 1820px;
+    transform: rotate(-20deg);
+}
+
+section#newApp div.image img.mainPhone {
+    z-index: 1;
+}
+
+section#newApp div.image img.miniPhoneOne {
+    right: 120px;
+}
+
+section#newApp div.image img.miniPhoneTwo {
+    top: 1925px;
+    right: 470px;
+}
+
+section#newApp img.watermelon {
+    position: absolute;
+    left: -100px;
+    top: 1640px;
+}
+
