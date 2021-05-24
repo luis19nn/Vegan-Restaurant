@@ -225,7 +225,6 @@ section#topMenu {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 680px;
 }
 
 /*---TOP MENU TEXT*/
@@ -510,3 +509,62 @@ section#newApp img.watermelon {
     top: 1640px;
 }
 
+/*OUR LOCATIONS*/
+
+section#ourLocations {
+    background-color: #F79595;
+    background-image: url("../Images/wavesAndBackgrounds/BackgroundOurLocations.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---OUR LOCATIONS TEXT*/
+
+section#ourLocations div.text {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+section#ourLocations div.text h1.subtitleGreenWhite {
+    padding-left: 60px;
+}
+
+section#ourLocations div.text h1.subtitleWhiteAmarillo {
+    margin-bottom: -15px;
+}
+
+/*OUR LOCATIONS GRID*/
+
+section#ourLocations div.gridLocates div.divLocate {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 330px;
+    height: 220px;
+    padding: 15px;
+}
+
+section#ourLocations div.gridLocates div.divLocate h2 {
+    color: #40B36C;
+    margin-bottom: 10px;
+}
+
+section#ourLocations div.gridLocates div.divLocate div.phoneNumber,
+section#ourLocations div.gridLocates div.divLocate div.workHour,
+section#ourLocations div.gridLocates div.divLocate div.address {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+section#ourLocations div.gridLocates div.divLocate div.phoneNumber img,
+section#ourLocations div.gridLocates div.divLocate div.workHour img,
+section#ourLocations div.gridLocates div.divLocate div.address img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+section#ourLocations div.gridLocates div.divLocate button.buttonGreenCard {
+    margin-left: 210px;
+}
