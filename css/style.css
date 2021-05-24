@@ -73,7 +73,7 @@ header nav ul li {
 
 main {
     display: grid;
-    grid-template-rows: 636px 443px 636px;
+    grid-template-rows: 636px 443px 680px 443px;
 }
 
 /*HERO GENERAL CONFIG*/
@@ -225,15 +225,15 @@ section#topMenu {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 680px;
 }
 
 /*---TOP MENU TEXT*/
 
 section#topMenu div.text {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 section#topMenu h1.subtitleGreenWhite {
@@ -245,6 +245,10 @@ section#topMenu h1.subtitleGreenWhite {
     text-shadow: 3px 3px#ffffff;
     font-size: 2.5rem;
     width: 80px;
+}
+
+section#topMenu h1.subtitleWhiteAmarillo {
+    margin-bottom: -15px;
 }
 
 .subtitleWhiteAmarillo {
@@ -259,24 +263,22 @@ section#topMenu h1.subtitleGreenWhite {
 
 #gridCards {
     display: grid;
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: 50px 190px 240px 240px 240px 190px 50px;
     justify-content: center;
     grid-column-gap: 35px;
-    margin-top: 100px;
-    margin-right: 35px;
 }
 
 /*------MAIN CARD*/
 
 section#topMenu div.mainCard {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 4;
     height: 440px;
     width: 240px;
     background-color: #ffffff;
     text-align: center;
     padding: 20px;
-    margin-left: -5px;
+    justify-self: center;
 }
 
 section#topMenu div.titleAndStars {
@@ -334,13 +336,14 @@ section#topMenu div.price h2 {
 
 section#topMenu div.rightCard {
     grid-row: 1;
-    grid-column: 1;
+    grid-column: 5;
     height: 360px;
     width: 240px;
     background-color: #40B36C;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+    justify-self: center;
 }
 
 section#topMenu div.rightCard div.titleAndStars {
@@ -357,6 +360,27 @@ section#topMenu div.rightCard p {
     color: #ffffff;
 }
 
+/*VOID RIGHT CARD*/
+
+section#topMenu div.voidRightCard {
+    grid-row: 1;
+    grid-column: 6;
+    height: 295px;
+    width: 190px;
+    background-color: #38BD7F;
+    margin-top: 90px;
+    margin-left: -20px;
+    justify-self: left;
+}
+
+/*RIGHT ARROW*/
+
+section#topMenu div.rightArrow {
+    grid-row: 1;
+    grid-column: 7;
+    align-self: center;
+}
+
 /*------LEFT CARD*/
 
 section#topMenu div.leftCard {
@@ -368,6 +392,7 @@ section#topMenu div.leftCard {
     text-align: center;
     padding: 15px;
     margin-top: 40px;
+    justify-self: center;
 }
 
 section#topMenu div.leftCard div.titleAndStars {
@@ -384,11 +409,35 @@ section#topMenu div.leftCard p {
     color: #ffffff;
 }
 
+/*VOID LEFT CARD*/
+
+section#topMenu div.voidLeftCard {
+    grid-row: 1;
+    grid-column: 2;
+    height: 295px;
+    width: 190px;
+    background-color: #38BD7F;
+    margin-top: 90px;
+    margin-right: -20px;
+    justify-self: right;
+}
+
+/*LEFT ARROW*/
+
+section#topMenu div.leftArrow {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+}
+
 /*---SEE MORE BUTTON*/
 
-section#topMenu button.buttonWhiteTitle {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+section#topMenu div#seeMoreButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+section#topMenu div button.buttonWhiteTitle  {
     width: 220px;
 }
