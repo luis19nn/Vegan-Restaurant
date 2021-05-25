@@ -1,4 +1,4 @@
-/*CONFIG*/
+/*SETTINGS*/
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 }
 
 ul, li {
@@ -19,19 +19,19 @@ a {
     text-decoration: none;
 }
 
-/*HEADER CONFIG*/
+/*HEADER SETTINGS*/
 
 header nav {
     background-color: #40B36C;
     height: 70px;
 }
 
-header nav div#logo, header nav ul {
+header nav div.logo, header nav ul {
     margin: 0 52px;
     padding: 10px;
 }
 
-#logo p {
+.logo p {
     font-family: Amarillo;
     font-size: 1.2rem;
     color: #ffffff;
@@ -50,11 +50,11 @@ header nav {
     justify-content: space-between;
 }
 
-#logo {
+.logo {
     display: flex;
 }
 
-#logo img {
+.logo img {
     width: 39px;
     height: 39px;
     align-self: center;
@@ -69,14 +69,14 @@ header nav ul li {
     margin-left: 52px;
 }
 
-/*MAIN GENERAL CONFIG*/
+/*MAIN GENERAL SETTINGS*/
 
 main {
     display: grid;
-    grid-template-rows: 636px 443px 680px 443px 680px;
+    grid-template-rows: 636px 443px 680px 443px 1157px;
 }
 
-/*HERO GENERAL CONFIG*/
+/*HERO GENERAL SETTINGS*/
 
 section#hero {
     background-color: #F79595;
@@ -86,7 +86,7 @@ section#hero {
     background-size: cover;
 }
 
-/*---HERO TEXT CONFIG*/
+/*---HERO TEXT SETTINGS*/
 
 section#hero div.text {
     display: inline-block;
@@ -139,7 +139,7 @@ section#hero .text p {
     border-radius: 25px;
 }
 
-/*---HERO IMAGE CONFIG*/
+/*---HERO IMAGE SETTINGS*/
 
 section#hero div.image img.mainImage {
     position: absolute;
@@ -170,7 +170,7 @@ section#hero div.image img.alface {
     left: -190px;
 }
 
-/*ABOUT US GENERAL CONFIG*/
+/*ABOUT US GENERAL SETTINGS*/
 
 section#aboutUs {
     display: grid;
@@ -217,7 +217,7 @@ section#aboutUs .text p {
     width: 560px;
 }
 
-/*TOP MENU CONFIG*/
+/*TOP MENU SETTINGS*/
 
 section#topMenu {
     background-color: #F79595;
@@ -524,18 +524,29 @@ section#ourLocations {
 section#ourLocations div.text {
     display: flex;
     justify-content: center;
-    border: 2px solid red;
 }
 
 section#ourLocations div.text h1.subtitleGreenWhite {
-    padding-left: 60px;
+    margin-left: 60px;
 }
 
 section#ourLocations div.text h1.subtitleWhiteAmarillo {
     margin-bottom: -15px;
+    width: 190px;
 }
 
 /*OUR LOCATIONS GRID*/
+
+section#ourLocations div.gridLocates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+/*---GENERAL SETTINGS*/
 
 section#ourLocations div.gridLocates div.divLocate {
     background-color: #ffffff;
@@ -567,4 +578,80 @@ section#ourLocations div.gridLocates div.divLocate div.address img {
 
 section#ourLocations div.gridLocates div.divLocate button.buttonGreenCard {
     margin-left: 210px;
+}
+
+/*--- INDIVIDUAL SETTINGS*/
+
+section#ourLocations div.gridLocates div.newYork {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: right;
+    align-self: center;
+}
+
+section#ourLocations div.gridLocates div.boston {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: left;
+    align-self: center;
+}
+
+section#ourLocations div.gridLocates div.washington {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: right;
+    align-self: center;
+}
+
+section#ourLocations div.gridLocates div.pittsburgh {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: left;
+    align-self: center;
+}
+
+/*FOOTER*/
+
+footer {
+    background-image: url("../Images/wavesAndBackgrounds/footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 477px;
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 50px;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+footer div.logo, footer ul li, footer img {
+    grid-row: 1;
+    cursor: pointer;
+}
+
+footer div.logo {
+    grid-column: 1;
+}
+
+footer ul li {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+footer img {
+    grid-column: 6;
+}
+
+footer div.socialMedia {
+    grid-row: 2;
+    grid-column: 6;
+}
+
+footer div.socialMedia img {
+    margin-left: 20px;
+    cursor: pointer;
 }
