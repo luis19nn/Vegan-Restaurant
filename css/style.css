@@ -54,9 +54,11 @@ header nav {
     display: flex;
 }
 
-.logo img {
-    width: 39px;
-    height: 39px;
+div.logo h2 {
+    color: #ffffff;
+    text-shadow: 3px 2px #19422F;
+    font-size: 3rem;
+    margin-right: 3px;
     align-self: center;
 }
 
@@ -66,7 +68,7 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 52px;
+    margin-left: 30px;
 }
 
 /*MAIN GENERAL SETTINGS*/
@@ -655,3 +657,136 @@ footer div.socialMedia img {
     margin-left: 20px;
     cursor: pointer;
 }
+
+
+
+/*
+    MENU PAGE
+*/
+
+/*BODY*/
+
+body#menu {
+    background-color: #19422F;
+    background-image: url("../Images/wavesAndBackgrounds/menuBackground.png");
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+/*HEADER*/
+
+header#menuHeader nav {
+    background-color: #ffffff00;
+}
+
+header#menuHeader nav div.logo h2 {
+    color: #40B36C;
+    text-shadow: 3px 2px#19422F;
+    font-size: 3rem;
+    margin-right: 3px;
+    align-self: center;
+}
+
+header#menuHeader nav div.logo p {
+    color: #2f814f;
+}
+
+/*MAIN*/
+
+main {
+    display: grid;
+    grid-template-columns: 243px 500px;
+    grid-column-gap: 24px;
+}
+
+/*TYPES NAVBAR*/
+
+section#typesNavbar {
+    grid-column: 1;
+    align-self: center;
+}
+
+section#typesNavbar ul li {
+    color: #19422F;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+section#typesNavbar ul li:hover {
+    color: #2f814f;
+    cursor: pointer;
+}
+
+/*TYPES DETAILS*/
+
+section#typesDetails {
+    grid-column: 2;
+}
+
+section#typesDetails div.title h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+section#typesDetails div.title div.legumes h1 {
+    color: #ffffff;
+    font-family: Amarillo;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-top: -40px;
+}
+
+section#typesDetails div.title div.legumes img {
+    height: 1px;
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+/*---DETAILS CONTAINER*/
+
+section#typesDetails table.detailsContainer {
+    color: #ffffff;
+    width: 450px;
+    border-collapse: collapse;
+    margin-top: 45px;
+}
+
+section#typesDetails table.detailsContainer tr,
+section#typesDetails table.detailsContainer td {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+section#typesDetails table.detailsContainer td.prices {
+    opacity: 65%;
+    text-align: right;
+}
+
+section#typesDetails table.detailsContainer tr:hover {
+    background-image: url("../Images/icons/backgroundRadius.png");
+    background-repeat: no-repeat;
+}
+
+/*
+section#typesDetails div.detailsContainer {
+    display: grid;
+    grid-template-columns: 400px 100px;
+}
+
+section#typesDetails div.detailsContainer div.prices {
+    opacity: 50%;
+}
+
+section#typesDetails div.detailsContainer div.names ul li,
+section#typesDetails div.detailsContainer div.prices ul li {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+*/
