@@ -1,1 +1,1 @@
-My first site using git and flexbox/grid layout.
+Um site fictício de um restaurante online. Este é meu primeiro site utilziando git e flexbox/grid layout.
