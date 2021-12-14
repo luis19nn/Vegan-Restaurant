@@ -11,7 +11,8 @@ body {
     overflow-x: hidden;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
 }
 
@@ -22,11 +23,12 @@ a {
 /*HEADER SETTINGS*/
 
 header nav {
-    background-color: #40B36C;
+    background-color: #40b36c;
     height: 70px;
 }
 
-header nav div.logo, header nav ul {
+header nav div.logo,
+header nav ul {
     margin: 0 52px;
     padding: 10px;
 }
@@ -38,7 +40,7 @@ header nav div.logo, header nav ul {
 }
 
 header nav ul li a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -56,7 +58,7 @@ header nav {
 
 div.logo h2 {
     color: #ffffff;
-    text-shadow: 3px 2px #19422F;
+    text-shadow: 3px 2px #19422f;
     font-size: 3rem;
     margin-right: 3px;
     align-self: center;
@@ -81,7 +83,7 @@ main {
 /*HERO GENERAL SETTINGS*/
 
 section#hero {
-    background-color: #F79595;
+    background-color: #f79595;
     background-image: url("../Images/wavesAndBackgrounds/BackgroundHero.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +99,7 @@ section#hero div.text {
 }
 
 .titleGreenWhite {
-    color: #40B36C;
+    color: #40b36c;
     text-shadow: 3px 3px#ffffff;
     font-size: 4rem;
     width: 360px;
@@ -119,7 +121,7 @@ section#hero .text p {
 
 .buttonGreenTitle {
     color: #ffffff;
-    background-color: #40B36C;
+    background-color: #40b36c;
     border: none;
     padding: 10px 45px;
     margin: 10px 10px 0px 0px;
@@ -134,7 +136,7 @@ section#hero div.text button.buttonGreenTitle a {
 }
 
 .buttonWhiteTitle {
-    color: #40B36C;
+    color: #40b36c;
     background-color: #ffffff;
     border: none;
     padding: 10px 45px;
@@ -210,7 +212,7 @@ section#aboutUs div.text {
 }
 
 .titleGreenBlack {
-    color: #40B36C;
+    color: #40b36c;
     text-shadow: 3px 3px#101010;
     font-size: 2.5rem;
     width: 160px;
@@ -226,7 +228,7 @@ section#aboutUs .text p {
 /*TOP MENU SETTINGS*/
 
 section#topMenu {
-    background-color: #F79595;
+    background-color: #f79595;
     background-image: url("../Images/wavesAndBackgrounds/BackgroundTopMenu.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -246,7 +248,7 @@ section#topMenu h1.subtitleGreenWhite {
 }
 
 .subtitleGreenWhite {
-    color: #40B36C;
+    color: #40b36c;
     text-shadow: 3px 3px#ffffff;
     font-size: 2.5rem;
     width: 80px;
@@ -302,21 +304,21 @@ div.price {
 }
 
 div.price h3 {
-    color: #40B36C;
+    color: #40b36c;
     text-shadow: 2px 2.5px#101010;
     font-size: 1.5rem;
     padding-top: 6px;
 }
 
 div.price h2 {
-    color: #40B36C;
+    color: #40b36c;
     text-shadow: 2px 2.5px#101010;
     font-size: 2.5rem;
 }
 
 .buttonGreenCard {
     color: #ffffff;
-    background-color: #40B36C;
+    background-color: #40b36c;
     border: none;
     padding: 10px 10px;
     margin: 0px 10px 0px 0px;
@@ -327,9 +329,9 @@ div.price h2 {
 }
 
 .buttonWhiteCard {
-    color: #40B36C;
+    color: #40b36c;
     background-color: #ffffff;
-    border: 2px solid #40B36C;
+    border: 2px solid #40b36c;
     padding: 10px 10px;
     font-weight: bold;
     text-transform: uppercase;
@@ -344,7 +346,7 @@ section#topMenu div.rightCard {
     grid-column: 5;
     height: 360px;
     width: 240px;
-    background-color: #40B36C;
+    background-color: #40b36c;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
@@ -372,7 +374,7 @@ section#topMenu div.voidRightCard {
     grid-column: 6;
     height: 295px;
     width: 190px;
-    background-color: #38BD7F;
+    background-color: #38bd7f;
     margin-top: 90px;
     margin-left: -20px;
     justify-self: left;
@@ -393,7 +395,7 @@ section#topMenu div.leftCard {
     grid-column: 3;
     height: 360px;
     width: 240px;
-    background-color: #40B36C;
+    background-color: #40b36c;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
@@ -421,7 +423,7 @@ section#topMenu div.voidLeftCard {
     grid-column: 2;
     height: 295px;
     width: 190px;
-    background-color: #38BD7F;
+    background-color: #38bd7f;
     margin-top: 90px;
     margin-right: -20px;
     justify-self: right;
@@ -448,7 +450,7 @@ section#topMenu div button.buttonWhiteTitle {
 }
 
 section#topMenu div button.buttonWhiteTitle a {
-    color: #38BD7F;
+    color: #38bd7f;
 }
 
 /*NEW APP*/
@@ -522,7 +524,7 @@ section#newApp img.watermelon {
 /*OUR LOCATIONS*/
 
 section#ourLocations {
-    background-color: #F79595;
+    background-color: #f79595;
     background-image: url("../Images/wavesAndBackgrounds/BackgroundOurLocations.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -567,7 +569,7 @@ section#ourLocations div.gridLocates div.divLocate {
 }
 
 section#ourLocations div.gridLocates div.divLocate h2 {
-    color: #40B36C;
+    color: #40b36c;
     margin-bottom: 10px;
 }
 
@@ -638,7 +640,9 @@ footer {
     align-items: center;
 }
 
-footer div.logo, footer ul li, footer img {
+footer div.logo,
+footer ul li,
+footer img {
     grid-row: 1;
     cursor: pointer;
 }
@@ -666,8 +670,6 @@ footer div.socialMedia img {
     cursor: pointer;
 }
 
-
-
 /*
     MENU PAGE
 */
@@ -675,7 +677,7 @@ footer div.socialMedia img {
 /*BODY*/
 
 body#menu {
-    background-color: #19422F;
+    background-color: #19422f;
     background-image: url("../Images/wavesAndBackgrounds/menuBackground.png");
     background-repeat: no-repeat;
     overflow-y: hidden;
@@ -688,7 +690,7 @@ header#menuHeader nav {
 }
 
 header#menuHeader nav div.logo h2 {
-    color: #40B36C;
+    color: #40b36c;
     text-shadow: 3px 2px#19422F;
     font-size: 3rem;
     margin-right: 3px;
@@ -715,7 +717,7 @@ section#typesNavbar {
 }
 
 section#typesNavbar ul li {
-    color: #19422F;
+    color: #19422f;
     font-size: 1.7rem;
     font-weight: bold;
     margin-left: 20px;
@@ -848,8 +850,6 @@ section#priceDetails button.buttonGreenTitle a {
     color: #ffffff;
 }
 
-
-
 /*
     PAYMENT PAGE
 */
@@ -857,7 +857,7 @@ section#priceDetails button.buttonGreenTitle a {
 /*BODY*/
 
 body#payment {
-    background-color: #19422F;
+    background-color: #19422f;
     background-image: url("../Images/wavesAndBackgrounds/paymentBackground.png");
     background-repeat: no-repeat;
     background-position-x: right;
@@ -966,7 +966,7 @@ section#formPayment form#firstForm button.buttonGreenTitle {
 }
 
 section#formPayment form#firstForm button.buttonGreenTitle a {
-    color: #FF6F6F;
+    color: #ff6f6f;
 }
 
 /*---SECOND FORM*/
@@ -976,7 +976,7 @@ section#formPayment form#secondForm {
 }
 
 section#formPayment form#secondForm button.buttonWhiteTitle {
-    background-color: #FF6F6F;
+    background-color: #ff6f6f;
     border: 2px solid #ffffff;
     width: 160px;
 }
